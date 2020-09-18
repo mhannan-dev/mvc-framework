@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Advanced PHP OOP Bangla Tutorial</title>
+  <title>PHP MVC Framework Development</title>
 <style>
 body {font-family: arial;font-size: 15px;line-height: 16px;margin: 0 auto;width: 850px;background:#EEEEEE}
 a{color:#DAA520;}
@@ -53,7 +53,7 @@ input[type="submit"]{cursor: pointer}
 </head>
 <body>
   <header class="headeroption">
-    <h2>Advanced PHP OOP Tutorial [MVC Framework]</h2>
+    <h2>PHP MVC Framework</h2>
 	
   </header>
 <div class="content">

@@ -1,6 +1,7 @@
 <?php include "inc/header.php"; ?>
+<?php 
+include_once './system/libs/Main.php';
 
-<?php echo "I am Hannan Ali" ?>
+$main = new Main(); 
 
-
-<?php include "inc/footer.php"; ?>
+?>
