@@ -1,10 +1,15 @@
 <?php
-# This is main class
+# This is MyController
 
-class MyController
-{
+class MyController extends DController{
+    
     public function __construct()
     {
-        echo "I am Hannan Ali ThisController is loading form CustomController file";
+        //parent::__construct();
     }
+    
+    public function jahan($param){
+        echo "I am form jahan $param";
+    }
+
 }

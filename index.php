@@ -1,21 +1,20 @@
 <?php include "inc/header.php"; ?>
-<?php 
-include_once './system/libs/Main.php';
-
+<?php
+include './system/libs/Main.php';
+include './system/libs/DController.php';
 
 $url = $_GET['url'];
 $url = rtrim($url,'/');
 $url = explode("/", $url);
 
-include_once './app/controllers/' . $url[0] . '.php';
+//Loading Controller dynamically
+include './app/controllers/'.$url[0].'.php';
 
-$mycontroller = new $url[0]();
+$ctlr = new $url[0]();
+$string = str_replace('"', "", $url[1]);
+$ctlr->$string($url[2]);
 
-
-
-// echo $controller    = $url[0]."<br/>";
-// echo $method        = $url[1]."<br/>";
-// echo $param         = $url[2]."<br/>";
 
 
 ?>
+
